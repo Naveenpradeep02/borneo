@@ -78,6 +78,7 @@ header .container {
   height: 80vh;
   position: fixed;
   display: none;
+  z-index: 20;
 }
 .mobile-menu ul {
   display: flex;
@@ -666,8 +667,80 @@ footer .social ul li i {
 .youtube {
   background-color: var(--red-color);
 }
+.main-logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+.main-logo img {
+  width: 150px;
+  margin: auto;
+}
+.language {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  place-items: center;
+  margin: 40px 0px;
+}
+.lang {
+  text-align: center;
+}
+.lang-img {
+  width: 150px;
+  background-color: var(--orange-color);
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+}
+.eng {
+  background-color: #c8b900;
+}
+.tam {
+  background-color: #f06428;
+}
+.hin {
+  background-color: #25669c;
+}
+.beng {
+  background-color: #dd54ff;
+}
+.guj {
+  background-color: #26e851;
+}
+.mal {
+  background-color: #caac94;
+}
+.tel {
+  background-color: var(--red-color);
+}
+.language a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+.lang-img p {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--light-orange);
+}
+.lang-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.lan-body {
+  background-color: var(--light-orange);
+}
+
 /* ================================================================================ */
 @media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
   .navigation {
     display: none;
   }
@@ -694,6 +767,79 @@ footer .social ul li i {
   .section1 .container .box2 img {
     width: 100%;
   }
+  .language {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .lang-img {
+    width: 100%;
+  }
+  .lan-body .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .section1 .container .box1,
+  .section2 .container .box1,
+  .section5 .container .box1 {
+    width: 100%;
+  }
+  .section1 .container .box2,
+  .section2 .container .box2,
+  .section5 .container .box2 {
+    width: 100%;
+  }
+  .section6-text p {
+    width: 100%;
+  }
+  .section1 .container,
+  .section2 .container,
+  .section5 .container {
+    flex-direction: column;
+  }
+  footer .container,
+  .section-11 .container,
+  .product-container .container,
+  .pro-list,
+  .section3,
+  .side-text ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .side-text ul {
+    margin: 20px;
+  }
+  .side-text ul li {
+    padding: 8px;
+  }
+  .product-container .container {
+    width: 100%;
+  }
+  .address {
+    padding: 0;
+  }
+  .section9 h2,
+  .section9 h3 {
+    padding: 20px;
+    text-align: center;
+  }
+  .section9 h3 {
+    font-size: 22px;
+  }
+  .section9 img {
+    width: 250px;
+  }
+  .side-img img {
+    display: none;
+  }
+  .section3 {
+    padding: 20px;
+
+    height: 100%;
+  }
+  .bar-line,
+  .bar-text {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) and (max-width: 767px) {
   .navigation {
@@ -716,6 +862,83 @@ footer .social ul li i {
   .section1 .container .box2 img {
     width: 100%;
   }
+  .language {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .language {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .lang-img {
+    width: 100%;
+  }
+  .lan-body .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .section1 .container .box1,
+  .section2 .container .box1,
+  .section5 .container .box1 {
+    width: 100%;
+  }
+  .section1 .container .box2,
+  .section2 .container .box2,
+  .section5 .container .box2 {
+    width: 100%;
+  }
+  .section6-text p {
+    width: 100%;
+  }
+  .section1 .container,
+  .section2 .container,
+  .section5 .container {
+    flex-direction: column;
+  }
+  footer .container,
+  .section-11 .container,
+  .product-container .container,
+  .pro-list,
+  .section3,
+  .side-text ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .side-text ul {
+    margin: 20px;
+  }
+  .side-text ul li {
+    padding: 8px;
+  }
+  .product-container .container {
+    width: 100%;
+  }
+  .address {
+    padding: 0;
+  }
+  .section9 h2,
+  .section9 h3 {
+    padding: 20px;
+    text-align: center;
+  }
+  .section9 h3 {
+    font-size: 22px;
+  }
+  .section9 img {
+    width: 250px;
+  }
+  .side-img img {
+    display: none;
+  }
+  .section3 {
+    padding: 20px;
+
+    height: 100%;
+  }
+  .bar-line,
+  .bar-text {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
@@ -731,9 +954,20 @@ footer .social ul li i {
     font-weight: 600;
     font-size: 14px;
   }
+  .language {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .navigation ul {
     gap: 20px;
+  }
+  .language {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
