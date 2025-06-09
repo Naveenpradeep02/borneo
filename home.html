@@ -611,26 +611,30 @@
           </div>
         </div>
         <div class="box2">
-          <form action="">
-            <input type="text" name="name" placeholder="Name" />
+          <form
+            id="contactForm"
+            method="post"
+            action="https://script.google.com/macros/s/AKfycbxT0WQKfU0nysQ8MMxYoRyiLjZxhtrf2nJHASInFSLrkZ68u-UMvlRXsz0z0kENb61r/exec"
+          >
+            <input type="text" name="Name" placeholder="Name" id="name" />
             <input
               type="tel"
-              name="phone"
+              name="Phone"
               id="phone"
               placeholder="Your Contact No"
             />
             <input
               type="text"
-              placeholder="Subject"
               name="Subject"
               id="subject"
+              placeholder="Subject"
             />
             <textarea
-              name="message"
+              name="Messages"
               id="message"
               placeholder="Message"
             ></textarea>
-            <button class="btn start-btn">
+            <button class="btn start-btn" type="submit" id="submitBtn">
               <span></span>Submit <span></span>
             </button>
           </form>
