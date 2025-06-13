@@ -16,7 +16,9 @@
   --poppins-font: "Poppins", sans-serif;
   --purple-font: "Purple Purse", serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--poppins-font);
   line-height: 200%;
@@ -572,6 +574,9 @@ header .container {
   color: var(--light-orange);
   margin-bottom: 30px;
 }
+.section-11 {
+  margin: 60px auto;
+}
 .section-11 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -734,7 +739,60 @@ footer .social ul li i {
 .lan-body {
   background-color: var(--light-orange);
 }
+.sub-page p {
+  margin-bottom: 20px;
+}
+.float-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default */
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 9999;
+  display: flex; /* Use flexbox for layout */
+}
 
+.left a,
+.right a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.left a:last-child {
+  margin-right: 0;
+}
+.float-container a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.float-container a.buy {
+  width: fit-content;
+  background-color: var(--orange-color);
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.whats {
+  background-color: var(--green-color);
+}
+.float-container a i {
+  color: var(--white-color);
+}
+.up {
+  background-color: #333;
+}
+.phone {
+  background-color: #25669c;
+}
 /* ================================================================================ */
 @media screen and (max-width: 575px) {
   .container {

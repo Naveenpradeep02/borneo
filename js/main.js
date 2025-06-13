@@ -68,3 +68,13 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       submitBtn.innerText = "Submit";
     });
 });
+
+window.addEventListener("scroll", function () {
+  const floatHeader = document.getElementById("floatHeader");
+  if (window.scrollY > 200) {
+    // Show after scrolling 200px
+    floatHeader.style.display = "flex";
+  } else {
+    floatHeader.style.display = "none";
+  }
+});
